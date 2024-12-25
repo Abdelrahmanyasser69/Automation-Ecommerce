@@ -1,0 +1,24 @@
+{
+    "userData":{
+      "ValidEmail": "abdelrahmanyasser606@gmail.com",
+    "ValidPassword": "@Aa12345",
+    "InvalidEmail": "a@b.com",
+    "InvalidPassword": "12345"
+    },
+    "checkOutData":{
+      "comment": "Please ensure the Blue Top is properly packaged to avoid any damage during transit. Thank you!"
+    },
+    "paymentData":{
+      "cardName": "Abdelrahman",
+      "numOfCard": "222266663333555",
+      "CVC": "331",
+      "expiration": "12",
+      "YYYY": "1111",
+      "invalidCardName": "2",
+      "invalidNumOfCard": "AAA",
+      "invalidCVC": "bbb",
+      "invalidexpiration": "ccc",
+      "invalidYYYY": "ddd"
+    }
+
+  }

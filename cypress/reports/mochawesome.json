@@ -1,0 +1,167 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-12-25T15:14:51.887Z",
+    "end": "2024-12-25T15:16:43.390Z",
+    "duration": 111503,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a4fd39b7-a920-4562-9287-ef43d3ccaa9f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\CheckoutTest.cy.js",
+      "file": "cypress\\e2e\\tests\\CheckoutTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8b6001d9-8411-4f04-815e-bdca7414b9ba",
+          "title": "Checkout Test Cases",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Checkout process with valid data and comment",
+              "fullTitle": "Checkout Test Cases Checkout process with valid data and comment",
+              "timedOut": null,
+              "duration": 24606,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "checkout.checkoutProcessValidData(comment, cardName, numOfCard, CVC, expiration, YYYY);",
+              "err": {},
+              "uuid": "15e1219a-7e5e-45c1-ab51-59b54bc2f7e0",
+              "parentUUID": "8b6001d9-8411-4f04-815e-bdca7414b9ba",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checkout process with valid data and without comment",
+              "fullTitle": "Checkout Test Cases Checkout process with valid data and without comment",
+              "timedOut": null,
+              "duration": 19971,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "checkout.checkoutProcessWihoutComment(cardName, numOfCard, CVC, expiration, YYYY);",
+              "err": {},
+              "uuid": "c8bec145-e773-446d-8a78-d0117f4f83fd",
+              "parentUUID": "8b6001d9-8411-4f04-815e-bdca7414b9ba",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checkout process with more than addition product",
+              "fullTitle": "Checkout Test Cases Checkout process with more than addition product",
+              "timedOut": null,
+              "duration": 24389,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "checkout.checkoutProcessWithMoreThanProduct(comment, cardName, numOfCard, CVC, expiration, YYYY);",
+              "err": {},
+              "uuid": "34bdfeda-6d00-4e02-90f0-55d30fae3989",
+              "parentUUID": "8b6001d9-8411-4f04-815e-bdca7414b9ba",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checkout process with invalid payment data",
+              "fullTitle": "Checkout Test Cases Checkout process with invalid payment data",
+              "timedOut": null,
+              "duration": 42166,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "checkout.checkoutProcessInvalidData(invalidCardName, invalidNumOfCard, invalidCVC, invalidexpiration, invalidYYYY);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 15000ms: Expected to find element: `//nonexistent-element`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 15000ms: Expected to find element: `//nonexistent-element`, but never found it.\n    at CheckoutPage.checkoutProcessInvalidData (webpack://ecommerce-automation/./cypress/e2e/pages/CheckoutPage.js:113:38)\n    at Context.eval (webpack://ecommerce-automation/./cypress/e2e/tests/CheckoutTest.cy.js:58:13)",
+                "diff": null
+              },
+              "uuid": "1ee7fd4f-37af-4c6c-a4a9-7e484997004c",
+              "parentUUID": "8b6001d9-8411-4f04-815e-bdca7414b9ba",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "15e1219a-7e5e-45c1-ab51-59b54bc2f7e0",
+            "c8bec145-e773-446d-8a78-d0117f4f83fd",
+            "34bdfeda-6d00-4e02-90f0-55d30fae3989"
+          ],
+          "failures": [
+            "1ee7fd4f-37af-4c6c-a4a9-7e484997004c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 111132,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
